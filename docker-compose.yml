@@ -21,10 +21,8 @@ services:
       - "8000:8000"
     environment:
       DJANGO_SETTINGS_MODULE: projectsecure.settings
-      JWT_SECRET_KEY: "HMa9MJ9x8vE!=sRtz8>bTKo03NCW92H8Mw8Lw2Pf52Fow7qPmZvF3]5VP@990"
-      SECRET_KEY: "m5rk2z!-z4jx+)w@p!n_y338d56fgtjxob-j^goj7dt6k&f!!!"
-      DEBUG: "TRUE"
-      HOST: "www.projectsecure.org"
+    env_file:
+      - projectsecure-production.env
     networks:
       - projectsecure
 
