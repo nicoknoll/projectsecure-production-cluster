@@ -9,7 +9,7 @@ services:
 
   api:
     restart: always
-    build: nikriek/projectsecure-api:latest
+    image: nikriek/projectsecure-api:latest
     networks:
       - projectsecure
     depends_on:
