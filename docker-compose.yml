@@ -9,7 +9,7 @@ services:
 
   api:
     restart: always
-    build: https://github.com/projectsecure/projectsecure-api.git
+    build: nikriek/projectsecure-api:latest
     networks:
       - projectsecure
     depends_on:
