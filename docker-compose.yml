@@ -17,6 +17,8 @@ services:
     links:
       - postgres
     command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
     environment:
       DJANGO_SETTINGS_MODULE: projectsecure.settings
       JWT_SECRET_KEY: "HMa9MJ9x8vE!=sRtz8>bTKo03NCW92H8Mw8Lw2Pf52Fow7qPmZvF3]5VP@990"
