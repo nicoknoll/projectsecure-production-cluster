@@ -51,7 +51,8 @@ services:
     build: https://github.com/projectsecure/client.git
     environment:
       PORT: 4000
-      HOST: "www.projectsecure.org"
+      HOST: "fb10-webprog-ws2016.hpi.uni-potsdam.de"
+      API_URL: "https://fb10-webprog-ws2016.hpi.uni-potsdam.de"
     networks:
       - projectsecure
 
