@@ -48,11 +48,13 @@ services:
 
   client:
     restart: always
-    build: https://github.com/projectsecure/client.git
+    build: 
+      context: https://github.com/projectsecure/client.git
+      args: 
+        - API_URL: "https://fb10-webprog-ws2016.hpi.uni-potsdam.de"
     environment:
       PORT: 4000
       HOST: "fb10-webprog-ws2016.hpi.uni-potsdam.de"
-      API_URL: "https://fb10-webprog-ws2016.hpi.uni-potsdam.de"
     networks:
       - projectsecure
 
